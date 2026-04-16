@@ -35,7 +35,7 @@ This project implements a deep learning-based system to classify aerial images i
 
 ![Accuracy](images/accuracy_graph.png)
 
-### Loss Graph
+### Streamlit Output
 
 ![Loss](images/streamlit_output.png)
 
