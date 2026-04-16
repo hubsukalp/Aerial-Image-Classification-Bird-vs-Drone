@@ -2,16 +2,17 @@
 
 ## 📌 Overview
 
-This project implements a deep learning-based system to classify aerial images into **Bird** and **Drone** categories using CNN and MobileNetV2. The final model is deployed using Streamlit for real-time predictions.
+This project implements a deep learning-based system to classify aerial images into **Bird** and **Drone** categories. Two approaches were used: a custom Convolutional Neural Network (CNN) and a transfer learning model (MobileNetV2). The final model is deployed using Streamlit for real-time predictions.
 
 ---
 
 ## 🚀 Features
 
-* Image classification using CNN and Transfer Learning
-* Achieved **95% accuracy** using MobileNetV2
-* Data augmentation for better generalization
-* Streamlit web app for real-time predictions
+* Image classification using Deep Learning
+* Comparison between CNN and Transfer Learning
+* Achieved **~95% accuracy** using MobileNetV2
+* Data augmentation for improved generalization
+* Streamlit-based web application for real-time predictions
 
 ---
 
@@ -20,12 +21,14 @@ This project implements a deep learning-based system to classify aerial images i
 ### 🔹 Custom CNN
 
 * Accuracy: ~85%
-* Moderate performance
+* Moderate training time
+* Slight overfitting observed
 
 ### 🔹 MobileNetV2 (Transfer Learning)
 
 * Accuracy: ~95.35%
-* Best-performing model
+* Faster training
+* Better generalization
 
 ---
 
@@ -37,36 +40,65 @@ This project implements a deep learning-based system to classify aerial images i
 
 ### Streamlit Output
 
-![Loss](images/streamlit_output.png)
+![Streamlit](images/streamlit_output.png)
 
 ---
 
 ## 🧪 Evaluation
 
-* Precision, Recall, F1-score
 * Confusion Matrix
+* Precision, Recall, F1-score
+* Model comparison analysis
 
 ---
 
-## 🖥️ Deployment (Streamlit)
+## ▶️ How to Run
 
-Run the app locally:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/hubsukalp/Aerial-Image-Classification-Bird-vs-Drone.git
+```
+
+2. Navigate to project folder:
+
+```bash
+cd Aerial-Image-Classification-Bird-vs-Drone
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the Streamlit app:
 
 ```bash
 streamlit run app.py
 ```
 
-Upload an image and get prediction (Bird 🐦 / Drone 🚁)
-
 ---
 
 ## 📂 Dataset
 
-Dataset used:
+Dataset used for classification:
+https://drive.google.com/drive/folders/1nn1vqsh8juhafkJcleembrjQ9EqtIoMh?usp=sharing
 
-* Classification dataset (Bird vs Drone)
-* https://drive.google.com/drive/folders/1nn1vqsh8juhafkJcleembrjQ9EqtIoMh?usp=sharing
 
+---
+
+## 📁 Project Structure
+
+```
+Aerial-Image-Classification-Bird-vs-Drone/
+│── app.py
+│── best_model.keras
+│── cnn_model.keras (optional)
+│── Aerial_Image_Classification_Bird_vs_Drone.ipynb
+│── requirements.txt
+│── images/
+```
 
 ---
 
@@ -75,18 +107,25 @@ Dataset used:
 * Python
 * TensorFlow / Keras
 * Streamlit
+* NumPy, Matplotlib
 * Scikit-learn
 
 ---
 
 ## 🔮 Future Scope
 
-* Implement YOLOv8 for object detection
-* Real-time video classification
-* Cloud deployment
+* Implement object detection using YOLOv8
+* Extend to real-time video surveillance
+* Deploy on cloud platforms
 
 ---
 
 ## 👨‍💻 Author
 
-Sukalp Warhekar
+**Sukalp Warhekar**
+
+---
+
+## 🔗 Project Repository
+
+GitHub Link: https://github.com/hubsukalp/Aerial-Image-Classification-Bird-vs-Drone
